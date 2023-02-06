@@ -13,7 +13,7 @@
 #include <functional>
 
 int main() {
-    // use lambda expression
+    // use lambda expressions
     [out = std::ref(std::cout << "Result from C code: " << add(1, 2))](){
         out.get() << ".\n";
     }();
